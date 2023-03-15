@@ -16,8 +16,7 @@ include 'db_connect.php';
 			<div class="col-lg-12">
 			<div class="card dashboard">
 				<div class="card-body">
-			
-						<marquee behavior="alternate" style="color:red; font-weight: 400; font-size: 40px;" scrolldelay="300">Welcome to Sacco Transaction site.</marquee>
+                    <marquee behavior="alternate" style="color:red; font-weight: 400; font-size: 40px;" scrolldelay="300">Welcome to Sacco Transaction site.</marquee>
 				</div>
 
 				<hr>

@@ -1,4 +1,4 @@
-<?php include 'db_connect.php' ?>
+1<?php include 'db_connect.php' ?>
 
 <div class="container-fluid">
 	<div class="col-lg-12">
@@ -48,7 +48,7 @@
 						 		<p>Contact # :<b><?php echo $row['contact_no'] ?></b></p>
 						 		<p>Email :<b><?php echo $row['email'] ?></b></p>
 						 		<p>Tax ID :<b><?php echo $row['tax_id'] ?></b></p>
-						 		<p>Borrower Image:<a href="assets/uploads/<?= ($row['upload_img']); ?>" target="_blank"><?= ($row['upload_img']); ?></a></p>
+						 		<p>Borrower Image:<a href="assets/uploads/<?= ($row['upload_img']); ?>" target="_blank"><img src="assets/uploads/<?= ($row['upload_img']); ?>" style="width: 35%;height:50%;" ></a></p>
 						 		
 						 	</td>
 						 	<td class="">None</td>
@@ -71,7 +71,7 @@
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+			        <h1 class="modal-title fs-3" id="exampleModalLabel">Add Borrower</h1>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">

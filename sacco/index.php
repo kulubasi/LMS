@@ -18,6 +18,7 @@
 
 </head>
 <style>
+  a{text-decoration: none;}
 	body{
         background: #80808045;
   }

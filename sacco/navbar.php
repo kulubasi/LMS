@@ -14,13 +14,40 @@
 				<?php if($_SESSION['login_type'] == 1): ?>
 				<a href="index.php?page=users" class="nav-item nav-users"><span class='icon-field'><i class="fa fa-users"></i></span> Users</a>
 				<?php endif; ?>
-				<a class="nav-item nav-users"><span class='icon-field'><i class="fa fa-users"></i></span> Notifications</a>
-				
+				<a class="nav-item nav-users" data-bs-toggle="modal" data-bs-target="#notificationModal"><span class='icon-field'><i class="fa fa-users"></i></span> Notifications</a>
+
 				<a href="ajax.php?action=logout" class="nav-item nav-users"><span class='icon-field'><i class="fa fa-lock"></i></span> Logout</a>
 				
 		</div>
 
 </nav>
+
+	<div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h1 class="modal-title fs-5" id="exampleModalLabel">Send Notification</h1>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form method="POST" action="newnot.php">
+			  <div class="mb-3">
+			    <label for="exampleInputEmail1" class="form-label">To </label>
+			    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter valid Email address">
+			    
+			  </div>
+			  <div class="mb-3">
+			    <label for="exampleInputPassword1" class="form-label">Message</label>
+			    <input type="text" name="msg" class="form-control" id="exampleInputPassword1" placeholder="Enter message">
+			  </div>
+			  
+			  <button type="submit" name="sendnoti" class="btn btn-primary">Send</button>
+			</form>
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
 <script>
 	$('.nav-<?php echo isset($_GET['page']) ? $_GET['page'] : '' ?>').addClass('active')
 </script>

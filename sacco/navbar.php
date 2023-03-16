@@ -14,6 +14,8 @@
 				<?php if($_SESSION['login_type'] == 1): ?>
 				<a href="index.php?page=users" class="nav-item nav-users"><span class='icon-field'><i class="fa fa-users"></i></span> Users</a>
 				<?php endif; ?>
+				<a class="nav-item nav-users"><span class='icon-field'><i class="fa fa-users"></i></span> Notifications</a>
+				
 				<a href="ajax.php?action=logout" class="nav-item nav-users"><span class='icon-field'><i class="fa fa-lock"></i></span> Logout</a>
 				
 		</div>

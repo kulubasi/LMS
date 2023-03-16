@@ -97,7 +97,7 @@ foreach($qry->fetch_array() as $k => $v){
 			<div class="row ">
 				<div class="col-md-12 text-center">
 					<button class="btn btn-primary " >Save</button>
-					<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+					<!-- <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button> -->
 				</div>
 			</div>
 		</div>
@@ -148,7 +148,8 @@ foreach($qry->fetch_array() as $k => $v){
 					$('.modal').modal('hide')
 					alert_toast("Loan Data successfully saved.","success")
 					setTimeout(function(){
-						location.reload();
+						// location.reload();
+						window.location = "success1.php"; 
 					},1500)
 				}
 			}
